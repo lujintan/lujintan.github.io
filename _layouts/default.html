@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <body>
+    <body>
 
-    {% include header.html %}
+        {% include header.html %}
+        
+        <script src="/js/jquery.js"></script>
+        <script src="/js/base.js"></script>
+        <div class="page-content">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+        {% include footer.html %}
+        
+        <a class="ui-back2top" id="uiBack2top" href="#">回顶部</a>
 
-    {% include footer.html %}
-
-  </body>
+    </body>
 
 </html>

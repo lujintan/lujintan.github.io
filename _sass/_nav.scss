@@ -1,0 +1,261 @@
+header.site-header{
+    background: #222;
+    height: 40px;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    box-shadow: 0 2px 2px rgba(0,0,0, .2);
+    z-index:1000;
+    nav{
+        .logo-w-wrapper{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            border: 8px solid #333;
+            box-shadow: 0 0 23px #000 inset;
+            -webkit-transform: scale(0.25);
+            background: #f9f8f4;
+            top: -118px;
+            left: -130px;
+        }
+        .logo-whirlybird{
+            position: absolute;
+            top: -36px;
+            left: 23px;
+        }
+        .logo-whirlybird .hangglider{
+            position: relative;
+            left: -5px;
+            -webkit-transform-style: preserve-3d;
+            -webkit-perspective: 521;
+            -webkit-perspective-origin: 50% 242px;
+            width: 260px;
+        }
+        .logo-whirlybird .hangglider .glider{
+            -webkit-transform: rotateX(90deg);
+        }
+        .logo-whirlybird .hangglider .g-l{
+            position: relative;
+            height: 260px;
+            width: 260px;
+            margin-left: -48px;
+            -webkit-transform: rotate(0);
+            -webkit-animation: glider-rotating 100s ease-in-out infinite;
+        }
+        .logo-whirlybird .hangglider .g-l .g-i{
+            width: 0;
+            border-radius: 80% 0 0 80%;
+            border-width: 20px 0 20px 130px;
+            border-style: dashed dashed dashed solid;
+            border-color: transparent transparent transparent #000;
+            position: absolute;
+            top: 110px;
+            left: 0;
+            -webkit-transform-origin: 100% 50%;
+        }
+        .logo-whirlybird .hangglider .g-l .g-i:nth-of-type(2){
+            -webkit-transform: rotate(120deg);
+        }
+        .logo-whirlybird .hangglider .g-l .g-i:nth-of-type(3){
+            -webkit-transform: rotate(240deg);
+        }
+        .logo-whirlybird .screw{
+            width: 30px;
+        }
+        .logo-whirlybird .screw::before{
+            content: '\20';
+            width: 8px;
+            height: 10px;
+            border-radius: 3px;
+            background: #000;
+            display: block;
+            margin-left: 73px;
+            margin-top: -130px;
+        }
+        .logo-whirlybird .screw::after{
+            content: '\20';
+            width: 20px;
+            height: 5px;
+            border: 5px solid #000;
+            border-radius: 50%;
+            display: block;
+            margin-left: 62px;
+            margin-top: -5px;
+        }
+        .logo-whirlybird .body{
+            width: 137px;
+            height: 100px;
+            border: 5px solid #000;
+            border-radius: 51% 45% 43% 43%;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            margin-top: -7px;
+            background: #f9f8f4;
+        }
+        .logo-whirlybird .body::after{
+            content: '\20';
+            width: 150px;
+            height: 200px;
+            border: 5px solid #000;
+            border-radius: 0 82% 14% 73%;
+            margin-top: -133px;
+            display: block;
+            margin-left: -94px;
+        }
+        .logo-whirlybird .tail{
+            height: 30px;
+            margin-top: -70px;
+            margin-left: 140px;
+            border-right: 3px solid transparent;
+            overflow: hidden;
+            background: #f9f8f4;
+            position: relative;
+            border-radius: 9px 8px 10px 7px;
+            width: 101px;
+            z-index: 2;
+        }
+        .logo-whirlybird .tail::before{
+            content: '\20';
+            width: 124px;
+            height: 20px;
+            border-radius: 100% 0 100% 0;
+            border: 5px solid #000;
+            display: block;
+            background: #f9f8f4;
+            -webkit-transform: rotate(10deg);
+            top: -14px;
+            left: 1px;
+            position: absolute;
+        }   
+        .logo-whirlybird .tail::after{
+            content: '\20';
+            width: 124px;
+            height: 20px;
+            border-radius: 100% 0 100% 0;
+            border: 5px solid #000;
+            display: block;
+            background: #f9f8f4;
+            -webkit-transform: rotate(190deg);
+            top: 16px;
+            left: 1px;
+            position: absolute;
+        }
+        .logo-whirlybird .tail-e{
+            width: 20px;
+            height: 40px;
+            border: 5px solid #000;
+            position: absolute;
+            margin-left: 235px;
+            -webkit-transform: skewX(-20deg);
+            margin-top: -53px;
+            border-radius: 13px;
+            z-index: 2;
+            background: #f9f8f4;
+        }
+        .logo-whirlybird .tail-e::after{
+            content: '\20';
+            width: 10px;
+            height: 10px;
+            background: #f9f8f4;
+            display: block;
+            margin-top: 29px;
+            margin-left: -6px;
+        }
+        .logo-whirlybird .footer{
+            width: 149px;
+            height: 21px;
+            margin-top: 34px;
+            margin-left: 9px;
+            position: relative;
+            border-radius: 50%;
+            border-bottom: 5px solid #000;
+        }
+        .logo-whirlybird .footer::before{
+            content: '\20';
+            height: 22px;
+            width: 14px;
+            border-radius: 50%;
+            border-right: 5px solid #000;
+            display: block;
+            left: 29px;
+            position: absolute;
+            top: 1px;
+        }
+        .logo-whirlybird .footer::after{
+            content: '\20';
+            height: 24px;
+            width: 14px;
+            border-radius: 50%;
+            border-left: 5px solid #000;
+            display: block;
+            left: 92px;
+            position: absolute;
+            top: -1px;
+        }
+        .nav-item{
+            float:left;
+            height:30px;
+            margin-top:5px;
+            line-height: 30px;
+            color:#fff;
+            font-size: 14px;
+            padding: 0 10px;
+            margin-right: 10px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 3px;
+        }
+        .nav-container{
+            padding: 0 10px;
+        }
+        .nav-item:first-child{
+            margin-left:40px;
+            height:50px;
+            margin-top:0;
+            width:95px;
+            text-indent: -9999em;
+            overflow:visible;
+        }
+        .nav-item::after{
+            margin-top:30px;
+            content: '\20';
+            display: block;
+            position: absolute;
+            width:100%;
+            height:30px;
+            background: #000;
+            padding:0 10px;
+            color:#000;
+            top:0;
+            left:0;
+            z-index: -1;
+            -webkit-transition: margin .3s;
+            -moz-transition: margin .3s;
+            -ms-transition: margin .3s;
+            -o-transition: margin .3s;
+            transition: margin .3s;
+        }
+        .nav-item:first-child::after{
+            display: none;
+        }
+        .nav-item:nth-child(2n)::after{
+            margin-top: -30px;
+        }
+        .nav-item:hover::after,
+        .nav-item.current::after{
+            margin-top:0;
+        }
+    }
+}
+
+@-webkit-keyframes glider-rotating{
+    0%{
+        -webkit-transform: rotate(0);
+    }
+    100%{
+        -webkit-transform: rotate(72000deg);
+    }
+}

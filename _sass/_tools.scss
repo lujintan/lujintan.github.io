@@ -1,0 +1,36 @@
+.clearfix::after{
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.wordwrap {
+    word-break:break-all;
+    word-wrap:break-word;
+}
+pre.wordwrap {
+    white-space:pre-wrap;
+}
+.yh {
+    font-family: "Microsoft Yahei", "微软雅黑", Arial, STHeiti, Tahoma, Helvetica;
+}
+.num {
+    font-family: Georgia,Tahoma,Helvetica,arial;
+}
+@-webkit-keyframes expand{
+    0%, 100%{
+        top: -70px;
+    }
+    30%, 70%{
+        top: 0;
+    }
+}
+
+@-webkit-keyframes loading{
+    0%, 100%{
+        top: 0;
+    }
+    60%{
+        top: -20px;
+    }
+}

@@ -1,204 +1,139 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-style: normal;
 }
-
-
-
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
     display: block;
 }
+::-webkit-scrollbar, 
+::-webkit-scrollbar-track, 
+::-webkit-scrollbar-track-piece{
+    width:12px;
+    background: #000;
+}
+::-webkit-scrollbar-thumb{
+    width:8px;
+    border:2px solid #000;
+    background: #e5315d;
+}
 
-figcaption {
-    font-size: $small-font-size;
+::-moz-scrollbar, 
+::-moz-scrollbar-track, 
+::-moz-scrollbar-track-piece{
+    width:12px;
+    background: #000;
+}
+::-moz-scrollbar-thumb{
+    width:8px;
+    border:2px solid #000;
+    background: #e5315d;
+}
+
+::-ms-scrollbar, 
+::-ms-scrollbar-track, 
+::-ms-scrollbar-track-piece{
+    width:12px;
+    background: #000;
+}
+::-ms-scrollbar-thumb{
+    width:8px;
+    border:2px solid #000;
+    background: #e5315d;
+}
+
+::-o-scrollbar, 
+::-o-scrollbar-track, 
+::-o-scrollbar-track-piece{
+    width:12px;
+    background: #000;
+}
+::-o-scrollbar-thumb{
+    width:8px;
+    border:2px solid #000;
+    background: #e5315d;
+}
+
+::scrollbar, 
+::scrollbar-track, 
+::scrollbar-track-piece{
+    width:12px;
+    background: #000;
+}
+::scrollbar-thumb{
+    width:8px;
+    border:2px solid #000;
+    background: #e5315d;
+}
+
+::-webkit-selection{
+    background: rgba(87, 161, 255, .5);
+}
+::-moz-selection{
+    background: rgba(87, 161, 255, .5);
+}
+::-ms-selection{
+    background: rgba(87, 161, 255, .5);
+}
+::-o-selection{
+    background: rgba(87, 161, 255, .5);
+}
+::selection{
+    background: rgba(87, 161, 255, .5);
+    box-shadow: 0 0 3px rgba(87, 161, 255, .5);
 }
 
 
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+html.forbide-scroll,
+html.forbide-scroll body{
+    overflow: hidden;
 }
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+body {
+    line-height: 1;
+    color: #fff;
+    font: 14px/1.5 arial,sans-serif;
 }
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+ol, ul {
+    list-style: none;
 }
-
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    -webkit-transition: background .3s, color .3s;
+    -moz-transition: background .3s, color .3s;
+    -ms-transition: background .3s, color .3s;
+    -o-transition: background .3s, color .3s;
+    transition: background .3s, color .3s;
     text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+    font-size: 12px;
+    color: #008fd9;
 }
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+a:hover{
+    text-decoration: none;
+    color: #00BBFF;
 }

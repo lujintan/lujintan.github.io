@@ -1,0 +1,11 @@
+<aside>
+    <div id="catWrapper" class="mod-cat-wrapper un-init">
+        <ul class="c-l">
+            {% for cat in site.categories %}
+            <li class="ci {% if cat[0] == page.cat%}current{% endif %}">
+                <a class="ca yh j-link" href="/cat/{{cat[0]|uri_escape}}">{{cat[0]}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</aside>

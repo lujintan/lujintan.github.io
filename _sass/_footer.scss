@@ -1,0 +1,41 @@
+.site-footer{
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    .wrapper{
+        padding: 5px 50px;
+    }
+    .footer-col{
+        li {
+            height: 30px;
+            line-height: 30px;
+            float: right;
+            margin-left: 20px;
+            .git-link,
+            .icon,
+            .git-name,
+            .wx-link{
+                float: left;
+                height: 30px;
+                line-height: 30px;
+            }
+            .icon{
+                margin-right: 10px;
+            }
+            .icon > svg{
+                width: 30px;
+                height: 30px;
+            }
+            .wx-link{
+                background: url(/image/ico_wx_ljt.jpg) no-repeat;
+                background-size: auto 100%;
+                padding-left: 40px;
+            }
+        }
+    }
+}
