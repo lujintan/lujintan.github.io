@@ -3,14 +3,14 @@ layout: post
 title:  "关于PHP内建webserver的使用"
 date:   2015-01-05 19:08:00
 categories: php
-preview: "/image/post/20141130-2.png"
+preview: "/image/post/20150105.png"
 ---
 
 今天使用php内建webserver遇到了一个问题，就是内建的webserver如何实现rewrite。
 
 从PHP5.4开始PHP支持了一个新特性就是“built-in webserver”，具体使用如下：
 
-{% highlight shell %}
+{% highlight bash %}
 #php -S <addr>:<port> -t <docroot>
 
 #doc 默认是命令执行的当前目录
@@ -29,7 +29,7 @@ php -S localhost:80 -t /Users/root/Documents/webroot
 
 但是对于内建的webserver要怎么搞定呢？截取了一段，官网的代码：
 
-{% highlight shell %}
+{% highlight php %}
 <?php
     // router.php
     if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
@@ -40,7 +40,7 @@ php -S localhost:80 -t /Users/root/Documents/webroot
 ?>
 {% endhighlight %}
 
-{% highlight shell %}
+{% highlight bash %}
 php -S localhost:8000 router.php
 {% endhighlight %}
 
