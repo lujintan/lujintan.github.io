@@ -43,3 +43,5 @@ php -S localhost:80 -t /Users/root/Documents/webroot
 {% highlight shell %}
 php -S localhost:8000 router.php
 {% endhighlight %}
+
+更多内容，参阅：[http://php.net/manual/en/features.commandline.webserver.php](http://php.net/manual/en/features.commandline.webserver.php)
