@@ -3,7 +3,7 @@
  */
 .highlight {
     .c     { color: #998; font-style: italic } // Comment
-    .err   { color: #a61717; background-color: #e3d2d2 } // Error
+    .err   { color: #FF776C; background-color: rgba(255,255,255, .3) } // Error
     .k     { font-weight: bold; color: #F7005E; } // Keyword
     .o     { font-weight: bold; color: #F7005E;} // Operator
     .cm    { color: #998; font-style: italic } // Comment.Multiline
@@ -40,7 +40,7 @@
     .ne    { color: #900; font-weight: bold } // Name.Exception
     .nf    { color: #900; font-weight: bold } // Name.Function
     .nn    { color: #555 } // Name.Namespace
-    .nt    { color: #000080 } // Name.Tag
+    .nt    { color: #487AFF } // Name.Tag
     .nv    { color: #008080 } // Name.Variable
     .ow    { font-weight: bold } // Operator.Word
     .w     { color: #bbb } // Text.Whitespace
