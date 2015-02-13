@@ -1,0 +1,42 @@
+---
+layout: default
+title: 快看有飞机—开源的项目
+permalink: /opensource/index.html
+---
+<div class="mod-os-wrapper">
+    <ul class="os-list">
+        <li>
+            <div class="os-li-wp">
+                <a class="pro-name" href="/opensource/filefactory">[npm toolkit]&nbsp;filefactory</a>
+                <p><span>code:&nbsp;</span><a target="_blank" class="git-link" href="https://github.com/lujintan/filefactory">https://github.com/lujintan/filefactory</a></p>
+                <p class="desc" ><span>desc:&nbsp;</span>generate files by the sample file</p>
+            </div>
+        </li>
+        <li>
+            <div class="os-li-wp">
+                <a class="pro-name" href="/opensource/fs-enhance">[npm toolkit]&nbsp;fs-enhance</a>
+                <p><span>code:&nbsp;</span><a target="_blank" class="git-link" href="https://github.com/lujintan/fs-enhance">https://github.com/lujintan/fs-enhance</a></p>
+                <p class="desc" ><span>desc:&nbsp;</span>extend file system apis for some more complex operation</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    (function(){
+        var $osList = $('.mod-os-wrapper .os-list');
+        var tCompare = 8 * 120;
+        var lCompare = 4 * 120;
+
+        var scrollHandler = function(){
+            var scrollTop = $(window).scrollTop();
+            var tOff = scrollTop % tCompare;
+            tOff = tOff > tCompare/2 ? tOff - tCompare : -tOff;
+            var transX = (tOff/(tCompare/2) * lCompare) >> 0;
+            
+            $osList.css(J.css.transform, 'translate3d(' + transX + 'px, 0, 0)');
+        };
+        scrollHandler();
+        $(window).bind('scroll', scrollHandler);
+    })();
+</script>
