@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "fill-parent & match-parent 的区别"
-date:   2014-10-11 21:42:00
+date:   2015-03-11 21:42:00
 categories: android
 preview: "/image/post/20141011.jpg"
 ---
