@@ -74,6 +74,19 @@
         a{
             font-size: 16px;
         }
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+            tr{
+                background-color: #333;
+                border-top: 1px solid #ccc;
+                td{
+                    padding: 6px 13px;
+                    border: 1px solid #ddd;
+                }
+            }
+        }
+
 
 
         .container{

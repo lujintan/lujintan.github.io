@@ -3,7 +3,7 @@ layout: post
 title:  "写了几个增强file system接口的api"
 date:   2015-01-06 21:42:00
 categories: node
-preview: "/image/post/20141011.jpg"
+preview: "/image/post/npm_logo.svg"
 ---
 
 最近在做一些文件处理方面的工作，所以特意写了一个npm包`fs-enhance`：[传送门](https://github.com/lujintan/fs-enhance)
