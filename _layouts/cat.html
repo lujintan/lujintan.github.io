@@ -6,6 +6,18 @@ layout: default
     <section id="jMainContainer" class="mod-main-container">
         <div class="mod-dna-container">
             <div class="mod-dna-wrapper uninit">
+                <ul id="dnaBarList" class="dna-bar-list">
+                    {% for post in site.categories[page.cat] %}
+                    <li class="it">
+                        <div class="ca"></div>
+                        <div class="cb"></div>
+                        <div class="cc"></div>
+                        <div class="cd"></div>
+                        <div class="ce"></div>
+                        <div class="cf"></div>
+                    </li>
+                  {% endfor %}
+                </ul>
                 <ul id="dnaMainList" class="main-list">
                     {% for post in site.categories[page.cat] %}
                     <li class="it">
@@ -22,18 +34,6 @@ layout: default
                     {% for post in site.categories[page.cat] %}
                         <li class="it"></li>
                     {% endfor %}
-                </ul>
-                <ul id="dnaBarList" class="dna-bar-list">
-                    {% for post in site.categories[page.cat] %}
-                    <li class="it">
-                        <div class="ca"></div>
-                        <div class="cb"></div>
-                        <div class="cc"></div>
-                        <div class="cd"></div>
-                        <div class="ce"></div>
-                        <div class="cf"></div>
-                    </li>
-                  {% endfor %}
                 </ul>
             </div>
         </div>
