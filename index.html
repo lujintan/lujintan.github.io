@@ -6,6 +6,11 @@ layout: default
     <section id="jMainContainer" class="mod-main-container">
         <div class="mod-dna-container">
             <div class="mod-dna-wrapper uninit">
+                <ul id="dnaFollowList" class="follow-list">
+                    {% for post in site.posts %}
+                        <li class="it"></li>
+                    {% endfor %}
+                </ul>
                 <ul id="dnaBarList" class="dna-bar-list">
                     {% for post in site.posts %}
                     <li class="it">
@@ -28,11 +33,6 @@ layout: default
                             </div>
                         </a>
                     </li>
-                    {% endfor %}
-                </ul>
-                <ul id="dnaFollowList" class="follow-list">
-                    {% for post in site.posts %}
-                        <li class="it"></li>
                     {% endfor %}
                 </ul>
             </div>
