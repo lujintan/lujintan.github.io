@@ -3,7 +3,7 @@ layout: post
 title:  "关于换行符(LF)和回车符(CR)"
 date:   2016-01-05 10:00:45
 categories: php
-preview: "/image/post/2015041002.jpg"
+preview: "/image/bg_bd.jpg"
 ---
 
 LF(line feed) & CR(carriage return)是表示换行的两种字符，分别表示换行和回车。

@@ -3,7 +3,7 @@ layout: post
 title:  "关于BOM头的解释"
 date:   2016-01-03 16:00:30
 categories: php
-preview: "/image/post/2015041002.jpg"
+preview: "/image/bg_bd.jpg"
 ---
 
 ##关于BOM头
