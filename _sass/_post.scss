@@ -77,10 +77,10 @@
         table{
             border-collapse: collapse;
             border-spacing: 0;
-            tr,th{
+            tr{
                 background-color: #333;
                 border-top: 1px solid #ccc;
-                td{
+                td,th{
                     padding: 6px 13px;
                     border: 1px solid #ddd;
                 }
