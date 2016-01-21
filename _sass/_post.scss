@@ -2,9 +2,8 @@
     padding: 40px 80px;
     .post{
         background-size: 100% auto;
-        background-attachment: fixed;
         background-color: #222;
-        background-position: center center;
+        background-position: top center;
         border: 1px solid #272727;
         border-top: none;
         border-bottom: none;
@@ -91,7 +90,7 @@
 
         .container{
             padding: 40px 25px;
-            background-color: rgba(#000, .9);
+            background-color: rgba(#000, .8);
 
             .comment-wp{
                 border-top: 1px solid #666;
