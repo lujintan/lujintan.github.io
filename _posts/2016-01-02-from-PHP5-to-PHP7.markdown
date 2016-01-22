@@ -6,7 +6,7 @@ categories: php
 preview: "/image/post/20150105.png"
 ---
 
-本文大部分内容参照“[Migrating from PHP 5.6.x to PHP 7.0.x](http://php.net/manual/en/migration70.php)”编写，主要是一些PHP7.x在实现上相较5.x的一些变化，给那些希望升级PHP 到7.x版本的童鞋参考。
+本文大部分内容参照“[Backward incompatible changes - Migrating from PHP 5.6.x to PHP 7.0.x](http://php.net/manual/en/migration70.php)”编写，主要是一些PHP7.x在实现上相较5.x的一些变化，给那些希望升级PHP 到7.x版本的童鞋参考。
 
 ##1. error 和 exception 的处理
 
@@ -352,7 +352,7 @@ var_dump(1 >> -1);
 
 ###4.4 除 0 问题
 
-PHP7中，如果0作为被除数，则会抛出`warning`，并返回`INF`或`NAN`；如果0作为被余数会抛出`DivisionByZeroError`错误，下面的🌰：
+PHP7中，如果0作为除数，则会抛出`warning`，并返回`INF`或`NAN`；如果0作为余数会抛出`DivisionByZeroError`错误，下面的🌰：
 
 {% highlight php %}
 <?php
