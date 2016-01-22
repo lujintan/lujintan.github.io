@@ -3,7 +3,7 @@ layout: post
 title:  "PHP规范 PSR-2:编码风格指南 详解"
 date:   2016-01-05 18:00:30
 categories: php
-preview: "/image/post/20160122.jpg"
+preview: "/image/post/20160122.png"
 ---
 
 本篇规范制定基于[PSR-1](http://www.kkyfj.com/php/2016/01/05/PSR-01.html)基本编码规范进行扩展。

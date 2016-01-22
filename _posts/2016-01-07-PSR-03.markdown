@@ -3,7 +3,7 @@ layout: post
 title:  "PHP规范 PSR-3:日志规范"
 date:   2016-01-07 17:30:30
 categories: php
-preview: "/image/post/20160122.jpg"
+preview: "/image/post/20160122.png"
 ---
 
 本篇描述日志库的一个通用的接口规范。

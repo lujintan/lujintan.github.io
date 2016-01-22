@@ -3,7 +3,7 @@ layout: post
 title:  "PHP规范 PSR-4:自动加载"
 date:   2016-01-07 18:03:30
 categories: php
-preview: "/image/post/20160122.jpg"
+preview: "/image/post/20160122.png"
 ---
 
 文档中关键词 "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" 的含义参见 [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt)。

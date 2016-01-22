@@ -3,7 +3,7 @@ layout: post
 title:  "PHP规范 PSR-1:基本编码规范 详解"
 date:   2016-01-05 16:00:30
 categories: php
-preview: "/image/post/20160122.jpg"
+preview: "/image/post/20160122.png"
 ---
 
 本篇规范制定了代码基本元素的相关标准，以确保共享的PHP代码间具有较高程度的技术互通性。
