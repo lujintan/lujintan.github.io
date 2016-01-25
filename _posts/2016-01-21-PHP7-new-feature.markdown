@@ -11,10 +11,13 @@ preview: "/image/post/20150105.png"
 ##1. 参数、返回值类型声明
 
 类型参数扩充了以下类型：`string`, `int`, `float`, `bool`。
+
 支持返回值的类型声明，类型与参数类型一致。
 
+若要对严格类型进行强制限制，则需要声明`declare(strict_types=1)`
+
 {% highlight php %}
-<?php
+<?php declare(strict_types=1);
 
 /**
  * [test description]
