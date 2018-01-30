@@ -15,7 +15,7 @@ J.dna = {
         J.dna.pn = 1;
         J.dna.flagDataEmpty = false;
         var $rotateContainer = $('#jMainContainer .mod-dna-wrapper'),
-            doc = J.browser.isWebkit ? document.body : document.documentElement;
+            doc = document.documentElement;
         if (!$rotateContainer){
             return;
         }
@@ -151,7 +151,7 @@ J.dna = {
     scrollInit : function(){
         var df = $.Deferred();
 
-        var doc = J.browser.isWebkit ? document.body : document.documentElement;
+        var doc = document.documentElement;
         var seed = J.dna.seed;
         var $mainContainer = $('#jMainContainer');
         var $dnaContainer = $mainContainer.find('.mod-dna-container');
