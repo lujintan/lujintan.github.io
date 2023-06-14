@@ -32,7 +32,7 @@
     transform: rotateY(70deg) rotateZ(20deg);
 }
 .mod-dna-wrapper .main-list{
-    
+    transform-style: preserve-3d;
 }
 .mod-dna-wrapper .follow-list,
 .mod-dna-wrapper .dna-bar-list{
@@ -41,6 +41,7 @@
     left:50%;
     margin-left:-50%;
     width:100%;
+    transform-style: preserve-3d;
 }
 .mod-dna-wrapper .follow-list .it,
 .mod-dna-wrapper .main-list .it{
